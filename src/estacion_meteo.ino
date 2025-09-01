@@ -22,6 +22,7 @@ BH1750 lightMeter(0x23);
 
 /*Sensor BMP180 presion y temperatura*/
 #include <BMP180I2C.h>
+/* en ocaciones hay que cambiar el I2C Address , tienes que consultar la informacion de tu sensor y fabricante */ 
 #define I2C_ADDRESS 0x77
 BMP180I2C bmp180(I2C_ADDRESS);
 
