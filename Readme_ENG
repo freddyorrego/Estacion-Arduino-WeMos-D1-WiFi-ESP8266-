@@ -1,0 +1,57 @@
+🌦️ Educational Weather Station
+
+I always wanted to have a weather station at home, but like many others, the high cost was a barrier. That led me to take on a challenge: building a low-cost weather station using easily accessible components that could send data to a website.
+
+🛠️ Steps I followed:
+- Selected and acquired the necessary components. For my station, I used a WeMos R1 D1 (compatible), which is a development board with built-in WiFi, a DHT22 temperature and humidity sensor, an analog UV sensor GUVA-S12SD, a BH1750 light intensity sensor, and optionally a 16x2 LCD.
+- Connected the sensors to the WeMos R1 D1 board following the manufacturer's instructions.
+- Wrote the code to read sensor data, process it, and filter out anomalous or erroneous values.
+- Optionally connected an LCD to display the data clearly and legibly (only during testing phase).
+- Chose a power source—solar panel and battery in my case, though it could also be powered via a phone charger.
+- Wrote the HTML code and created the database to store the information on a website.
+
+🔧 Hardware Used
+- DHT22 Sensor (Temperature and Humidity)
+- RTC DS3231 Sensor
+- GUVA-S12SD UV Sensor
+- GY-68 BMP180 Pressure Sensor
+- BH1750 Light Sensor
+- I2C 16x2 LCD (optional or for development only)
+- SD Module
+- WeMos R1 D1 (compatible)
+- Hosting / domain
+
+🧰 Additional Materials
+- Soldering iron
+- Solder
+- Dupont cables or similar
+- Enclosure for the project
+- Power supply (portable battery, solar power system, or mobile charger)
+
+📊 Features
+- Temperature display
+- Atmospheric pressure display
+- Humidity display
+- Light intensity display
+- UV radiation display
+- Data logging in MySQL database
+
+📁 Files
+- src/estacion_meteo.ino: Main code
+- docs/: Diagrams and explanations
+- data/: Sample logs
+- web/: Web server setup
+
+🧠 Educational Logic
+This system is designed as an educational project, allowing students to understand programming logic and develop the necessary skills to work with hardware.
+
+📷 Visualization Example
+Website: http://www.2g.cl/meteo/
+
+📈 Sample Log
+Date,Time,Temp,Humidity,TempRTC,DewPoint,DewRisk
+2025-09-01,09:30:00,18.5,92,19.0,17.9,YES
+
+
+
+
